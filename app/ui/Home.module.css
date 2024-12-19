@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.title {
+  margin: 20px;
+}
+
+@media (max-width: 900px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .span {
+    margin: 100px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .span {
+    margin: 100px;
+  }
+  
+}

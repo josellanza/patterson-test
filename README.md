@@ -1,8 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Summary
+
+This is a test for patterson. It is a web app where you can find the characters of rick and Morty. If the user selects one character the details will be shown. Also if the user selects 2 characters the episodes where these two characters appear will be shown.
+Also there is a pagination in order to display the characters in several pages.
 
 ## Getting Started
 
-First, run the development server:
+npm install to install all the dependencies
+
+then run the development server:
 
 ```bash
 npm run dev
@@ -20,17 +25,28 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+App folder that contains several folders:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - components: store all the components that can be re used.
+  - lib: locate the data file whit all the APIs calls
+  - ui: contains the client components
+  - utils: contains the utils for the app (f.e types file)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Components
 
-## Deploy on Vercel
+The home page is located in the ui folder as it is the only client component. From here we store the data in the useState hook and provide the required data to the server components. To get the initial data, a call to the Apis are made from the lib folder and pass it to the other components via props
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Dependencies
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+No library has been use only the classnames to manage several classnames
+
+## Things to improve
+
+- improve the css.
+- improve some of the components to make them more reusable
+- improve responsive
+- make tests!
+
+  
